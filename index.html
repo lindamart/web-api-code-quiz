@@ -7,10 +7,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Code Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7693a8205f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- Start page button  -->
+    <div class="start_btn"><button>Start</button></div>
+
+    <!-- Quiz info details  -->
+    <div class="quiz_deetz">
+        <div class="deetz_title">
+            <span>Code Quiz Details</span>
+        </div>
+        <div class="deetz_list">
+            <div class="info">1. Can you answer the following questions within the time limit?
+                You will only have <span>5 minutes</span></div>
+            <div class="info">2. Once you select your answer, you cannot select it again.</div>
+            <div class="info">3. Once the time runs out you wont be able to select an answer.</div>
+            <div class="info">4. You cannot exit the quiz once you start playing.</div>
+            <div class="info">5. You can gain points for every correct answer.</div>
+            <div class="info">6. You will loose time for every wrong answer.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Leave Quiz</button>
+            <button class="startover">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz  -->
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Timed Coding Quiz</div>
+            <div class="timer">
+                <div class="timer_text">Time Left</div>
+                <div class="timer_mins">5</div>
+            </div>
+
+        </header>
+
+        <section>
+            <div class="show_quest">
+                <span>In HTML, JavaScript code is inserted between which tags?</span>
+            </div>
+
+            <div class="answer_options">
+                <div class="option"> <span>p</span>
+                    <div class="icon down"><i class="far fa-thumbs-down"></i></i></div>
+                </div>
+                <div class="answer_options">
+                    <div class="option"> <span>h1</span>
+                        <!-- <div class="icon"><i class="far fa-thumbs-down"></i></div> -->
+                    </div>
+                    <div class="answer_options">
+                        <div class="option"> <span>script</span>
+                            <div class="icon up"><i class="far fa-thumbs-up"></i></div>
+                        </div>
+                    </div>
+        </section>
+
+        <footer>
+            <div class="total">
+                <span><p>2</p>of<p>3</p>Questions</span>
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <!-- Final Results -->
+
+    <div class="results_box">
+        <div class="icon">
+            <i class="fas fa-poll"></i>
+        </div>
+        <div class="completed_wording">You are done!</div>
+        <div class="fnl_score">
+            <span>You got <p>2</p>out of<p>3</p></span>
+        </div>
+        <div class="buttons">
+            <button class="again">Play Again</button>
+            <button class="done">I'm Done!</button>
+        </div>
+    </div>
+
+
+
+
+
+
 
     <script src="assets/js/main.js"></script>
 </body>
