@@ -13,3 +13,14 @@
 // WHEN the game is over
 // THEN I can save my initials and set my score on the board.
 
+
+const start_btn = document.querySelector("start_btn button");
+const quiz_deetz = document.querySelector("quiz_deetz button");
+const quit = document.querySelector("quit button");
+const startover = document.querySelector("startover button");
+
+// Start button hit
+
+start_btn.onclick = ()=>{
+    quiz_deetz.classList.add("");
+}

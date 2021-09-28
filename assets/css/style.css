@@ -11,22 +11,25 @@ body {
 }
 
 .start_btn button {
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: 500;
-    color: #D35400;
+    color: #f3ece7;
     padding: 15px 30px;
     outline: none;
     border: none;
     border-radius: 5px;
-    background: #F4EEE6;
+    background: #8a540e;
     cursor: pointer;
 }
 
 .quiz_deetz {
-    display: none;
+   /* Hidden */
+    /* display: none; */
     width: 540px;
     background: #F4EEE6;
     border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .quiz_deetz .deetz_title {
@@ -97,10 +100,13 @@ body {
 
 .quiz_box {
     /* bottom numbers not lined up????? */
-    display: none;
+    /* Hidden */
+    /* display: none; */
     width: 550px;
     background: #EDBB99;
     border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .quiz_box header {
@@ -250,6 +256,7 @@ footer .next_btn {
 
 footer .next_btn:hover {
     background: #D6EAF8;
+    
 }
 
 .results_box {
@@ -262,6 +269,9 @@ footer .next_btn:hover {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    /* hide */
+    opacity: 0;
+    pointer-events: none;
 }
 
 .results_box .icon {
@@ -305,3 +315,4 @@ footer .next_btn:hover {
     border: 1px solid #D35400;
     cursor: pointer;
 }
+
