@@ -219,13 +219,30 @@ section .answer_options .option:hover {
 .answer_options .option .icon.up {
     color: #1CCE19;
     border-color: #1CCE19;
+    background: #D4EFDF;
 }
 
 .answer_options .option .icon.down {
     color: #F10B0B;
     border-color: #F10B0B;
+    background: #F9EBEA;
 }
 
+.answer_options .option.correct{
+    color: #1CCE19;
+    border-color: #1CCE19;
+    background: #D4EFDF;
+}
+
+.answer_options .option.incorrect{
+    color: #F10B0B;
+    border-color: #F10B0B;
+    background: #F9EBEA;
+}
+
+.answer_options .option.disabled{
+    pointer-events: none;
+}
 .quiz_box footer {
     height: 60px;
     width: 100%;
