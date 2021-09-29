@@ -11,7 +11,8 @@ body {
 }
 
 .quiz_deetz.activeInfo,
-.quiz_box.activeQuiz{
+.quiz_box.activeQuiz,
+.results_box.activeResult{
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -154,7 +155,7 @@ body {
     font-size: 20px;
 }
 
-.quiz_box header .timer .timer_mins {
+.quiz_box header .timer .timer_sec {
     font-size: 18px;
     font-weight: 800;
     background: #FDEBD0;
@@ -229,8 +230,8 @@ section .answer_options .option:hover {
 }
 
 .answer_options .option.correct{
-    color: #1CCE19;
-    border-color: #1CCE19;
+    color: #1E8449;
+    border-color: blue;
     background: #D4EFDF;
 }
 
