@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,24 +70,33 @@
 
         <div class="buttons">
             <button class="again">Play Again</button>
-            <button class="done">I'm Done!</button>
+
         </div>
 
         <!-- Enter initials  -->
         <div class="user_init">
             <div class="init_title">If you are done, enter you initials here and hit I'm done.</div>
             <label for="inits">Initials</label>
-            <input type="text" placeholder="LM" />
+            <input class="inits" type="text" placeholder="Your Initials" />
         </div>
 
         <!-- Final Data Initials and score  -->
-        <div class="data">
-            <div class="data_card">Test Data</div>
-            <p>Initials: <span id="inits"></span></p>
-            <p>Score: <span id="saved-grade"></span></p>
-        </div>
-    </div>
+        <fieldset>
+            <div class="data">
+                <div class="data_card">Test Data</div>
+                <p>Initials: <span id="inits"></span></p>
+                <p>Score: <span id="saved-grade"></span></p>
 
+            </div>
+            <div class="buttons">
+                <button class="done">I'm Done!</button>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label>Test Data</label>
+            <div class="localOutput"></div>
+    </div>
+    </fieldset>
     <script src="assets/js/main.js"></script>
 </body>
 

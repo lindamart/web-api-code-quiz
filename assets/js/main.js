@@ -9,6 +9,7 @@ const answer_options = document.querySelector(".answer_options");
 const timeCount = quiz_box.querySelector(".timer .timer_sec");
 const usrInit = document.querySelector(".done")
 
+
 // Questions, answer options and answers
 let questions = [
     {
@@ -197,6 +198,22 @@ function showResultBox() {
     localStorage.setItem("fnl-score", JSON.stringify(userScore));
 
 }
+// pull info form score and initials input ????
+const fnl_score = document.getElementById("fnl_score");
+const inits = document.getElementById("inits")
+const localOutput = document.getElementById("localOutput")
+// button below
+const done = document.getElementById("done") 
+
+done.onclick = function(){
+    const value = inits.value;
+    console.log(value):
+localStorage.setItem(value);
+location.reload();
+
+};
+
+
 
 
 function startTimer() {
