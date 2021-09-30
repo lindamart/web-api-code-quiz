@@ -19,9 +19,7 @@
 
     <!-- Quiz info details  -->
     <div class="quiz_deetz">
-        <div class="deetz_title">
-            <span>Code Quiz Details</span>
-        </div>
+        <div class="deetz_title"><span>Code Quiz Details</span></div>
         <div class="deetz_list">
             <div class="info">1. Can you answer the following questions within the time limit?
                 You will only have <span>20 seconds</span></div>
@@ -30,8 +28,9 @@
             <div class="info">3. Once you have selected an answer you cannot select another answer.</div>
             <div class="info">4. You can points for every correct answer.</div>
             <div class="info">5. Your time will decrease for every wrong answer.</div>
-            
         </div>
+
+        <!-- Go into quiz or quit -->
         <div class="buttons">
             <button class="quit">Leave Quiz</button>
             <button class="startover">Continue</button>
@@ -51,57 +50,44 @@
         </header>
 
         <section>
-            <div class="show_quest">
-                <!-- <span>In HTML, JavaScript code is inserted between which tags?</span> -->
-            </div>
-
-            <div class="answer_options">
-                <!-- <div class="option"> <span>p</span>
-                    <div class="icon down"><i class="far fa-thumbs-down"></i></i></div>
-                </div>
-                <div class="answer_options">
-                    <div class="option"> <span>h1</span>
-                        <div class="icon"><i class="far fa-thumbs-down"></i></div>
-                    </div>
-                    <div class="answer_options">
-                        <div class="option"> <span>script</span>
-                            <div class="icon up"><i class="far fa-thumbs-up"></i></div>
-                        </div> -->
-                    </div>
+            <div class="show_quest"></div>
+            <div class="answer_options"></div>
         </section>
 
         <footer>
             <div class="total">
-                <!-- <span><p>2</p>of<p>3</p>Questions</span> -->
-            </div>
-            <button class="next_btn">Next Question</button>
+            </div><button class="next_btn">Next Question</button>
         </footer>
     </div>
 
     <!-- Final Results -->
 
     <div class="results_box">
-        <div class="icon">
-            <i class="fas fa-poll"></i>
-        </div>
+        <div class="icon"><i class="fas fa-poll"></i></div>
         <div class="completed_wording">You are done!</div>
-        <div class="fnl_score">
-            <span>You got <p>2</p>out of<p>3</p></span>
-        </div>
+        <div class="fnl_score"></div>
+
         <div class="buttons">
             <button class="again">Play Again</button>
             <button class="done">I'm Done!</button>
         </div>
+
+        <!-- Enter initials  -->
+        <div class="user_init">
+            <div class="init_title">If you are done, enter you initials here and hit I'm done.</div>
+            <label for="inits">Initials</label>
+            <input type="text" placeholder="LM" />
+        </div>
+
+        <!-- Final Data Initials and score  -->
+        <div class="data">
+            <div class="data_card">Test Data</div>
+            <p>Initials: <span id="inits"></span></p>
+            <p>Score: <span id="saved-grade"></span></p>
+        </div>
     </div>
 
-
-
-
-
-
-
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/qzquest.js"></script>
 </body>
 
 </html>

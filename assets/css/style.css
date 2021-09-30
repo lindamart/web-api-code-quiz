@@ -1,8 +1,9 @@
 body {
-    background-color: #FDEBD0;
+    background-color: #f1eee8;
     font-family: 'PT Sans', sans-serif;
 }
 
+/* Start button  */
 .start_btn, .quiz_deetz, .quiz_box, .results_box {
     position: absolute;
     top: 50%;
@@ -26,15 +27,16 @@ body {
     outline: none;
     border: none;
     border-radius: 5px;
-    background: #8a540e;
+    background: #3784b1;
     cursor: pointer;
 }
 
+/* Quiz details  */
 .quiz_deetz {
    /* Hidden */
     /* display: none; */
     width: 540px;
-    background: #F4EEE6;
+    background: #d5e5f0;
     border-radius: 10px;
     opacity: 0;
     pointer-events: none;
@@ -43,7 +45,7 @@ body {
 .quiz_deetz .deetz_title {
     height: 60px;
     width: auto;
-    border-bottom: 1px solid #D35400;
+    border-bottom: 1px solid #d5e5f0;
     display: flex;
     align-items: center;
     padding: 0 35px;
@@ -72,7 +74,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     padding: 0 35px;
-    border-bottom: 1px solid #D35400;
+    border-bottom: 1px solid #d5e5f0;
 }
 
 .quiz_deetz .buttons button {
@@ -89,6 +91,7 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Buttons  */
 .buttons button.startover {
     color: #FDEBD0;
     background: #D35400;
@@ -107,12 +110,12 @@ body {
     background: #D35400;
 }
 
+/* Quiz box with quiz details inside  */
 .quiz_box {
-    /* bottom numbers not lined up????? */
     /* Hidden */
     /* display: none; */
     width: 550px;
-    background: #EDBB99;
+    background: #d5e5f0;
     border-radius: 5px;
     opacity: 0;
     pointer-events: none;
@@ -124,13 +127,12 @@ body {
     z-index: 99;
     height: 70px;
     padding: 0 30px;
-    background: #E59866;
+    background: #d5e5f0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 5px 5px 0 0;
     box-shadow: 0px 3px 5px 1px #6E2C00;
-    /* (0,0,0,0.1) */
 }
 
 .quiz_box header .title {
@@ -144,10 +146,9 @@ body {
     justify-content: space-between;
     width: 145px;
     height: 45px;
-    background: #E59866;
-    border: 1px solid #E59866;
+    background: #d5e5f0;
+    border: 1px solid #d5e5f0;
     border-radius: 5px;
-    /* padding: 0 8px; */
 }
 
 .quiz_box header .timer .timer_text {
@@ -158,7 +159,7 @@ body {
 .quiz_box header .timer .timer_sec {
     font-size: 18px;
     font-weight: 800;
-    background: #FDEBD0;
+    background: #f6f6f5;
     height: 30px;
     width: 45px;
     color: #D35400;
@@ -170,7 +171,7 @@ body {
 
 .quiz_box section {
     padding: 25px 30px 20px 30px;
-    background: #EDBB99;
+    background: #d5e5f0;
 }
 
 .quiz_box section .show_quest {
@@ -183,6 +184,7 @@ body {
     display: block;
 }
 
+/* Answer options  */
 section .answer_options .option {
     background: white;
     border: 1px solid #D35400;
@@ -244,13 +246,15 @@ section .answer_options .option:hover {
 .answer_options .option.disabled{
     pointer-events: none;
 }
+
+/* Quiz box footer */
 .quiz_box footer {
     height: 60px;
-    width: 100%;
     padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 1px;
 }
 
 .quiz_box footer .total span {
@@ -261,6 +265,7 @@ section .answer_options .option:hover {
 .quiz_box footer .total p {
     font-weight: 500;
     padding: 0 5px;
+    margin: 1px;
 }
 
 .quiz_box footer .total p:first-child {
@@ -286,8 +291,9 @@ footer .next_btn:hover {
     
 }
 
+/* Final results box  */
 .results_box {
-    background: whitesmoke;
+    background: #d5e5f0;
     width: 450px;
     padding: 25px 30px;
     border-radius: 5px;
@@ -303,7 +309,7 @@ footer .next_btn:hover {
 
 .results_box .icon {
     font-size: 60px;
-    color: #D35400;
+    color: #d47c42;
     margin-bottom: 10px;
 }
 
@@ -312,17 +318,21 @@ footer .next_btn:hover {
     font-weight: 500;
 }
 
-.results_box .fnl_score span {
-    display: flex;
+.results_box .fnl_score span p{
     margin: 10px 0;
     font-size: 18px;
     font-weight: 500;
 }
 
-.fnl_score span p {
+.fnl_score span  {
     font-weight: 500;
     padding: 0 4px;
+    vertical-align: text-top;
+    font-size: large;
 }
+
+
+
 
 .results_box .buttons{
     display: flex;
@@ -341,5 +351,11 @@ footer .next_btn:hover {
     border-radius: 5px;
     border: 1px solid #D35400;
     cursor: pointer;
+}
+
+.init_title,
+.data {
+    font-size: 20px;
+    font-weight: 500;
 }
 
