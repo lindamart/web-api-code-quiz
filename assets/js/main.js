@@ -199,19 +199,19 @@ function showResultBox() {
 
 }
 // pull info form score and initials input ????
-const fnl_score = document.getElementById("fnl_score");
-const inits = document.getElementById("inits")
-const localOutput = document.getElementById("localOutput")
-// button below
-const done = document.getElementById("done") 
+// const fnl_score = document.getElementById("fnl_score");
+// const inits = document.getElementById("inits")
+// const localOutput = document.getElementById("localOutput")
+// // button below
+// const done = document.getElementById("done") 
 
-done.onclick = function(){
-    const value = inits.value;
-    console.log(value):
-localStorage.setItem(value);
-location.reload();
+// done.onclick = function(){
+//     const value = inits.value;
+//     console.log(value):
+// localStorage.setItem(value);
+// location.reload();
 
-};
+// };
 
 
 
